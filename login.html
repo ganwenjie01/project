@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_650603_us2xqh3drisbgldi.css"/>
+	</head>
+	<body>
+		  <div class="container">
+		        <div class="container-logo">
+                 <img src="img/music.png" alt="" />		        	 
+		        </div>
+		  		<div class="container-login">
+		  			    <div><button class="container-login-btna">登录</button></div>
+		  			    <div><button class="container-login-btnb">注册</button></div>
+		  		</div>
+		  		<div class="container-login-way">
+		  		      <div class="container-login-center">
+		  		      	<span></span>
+				        <span>其他登录方式</span>
+				        <span></span>
+		  		      </div>
+		  		      
+		  		      <div class="container-login-logo">
+		  		      <span class="iconfont icon-weixin"></span>
+		  		      <span class="iconfont icon-qq"></span>
+		  		      <span class="iconfont icon-weibo"></span>
+		  		      </div>
+		  		</div>
+		  	</div>
+		  	
+		  	<div class="login">
+		  		<header>
+		  			<div class="header-top">
+		  				<span class="iconfont icon-zuohua return">手机号登录</span>
+		  			</div>
+		  			
+		  		</header>
+		  		
+		  		<section>
+		  		<div class="section-phone">
+		  			<div class="section-phone-nubmer">
+		  				<span class="iconfont icon-shouji"></span><input type="text" placeholder="请输入手机号"/>
+		  			</div>
+		  			<div class="section-phone-password">
+		  				<span class="iconfont icon-suo"></span><input type="password" placeholder="请输入密码"/>
+		  			</div>
+		  		</div>
+		  		
+		  		<div class="section-login">
+		  			<button class="section-login-btn">登录</button>
+		  		</div>
+		  		</section>
+		  		
+		  	</div>
+		  	
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+	 document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+	 //进入手机号登录界面
+	   $('.container-login-btna').click(function(){
+	   	$('.container').css('display','none')
+	   	$('.login').css('display','block')
+	   })
+	   //
+	   $('.return').click(function(){
+	   	window.location.href='login.html'
+	   	
+	   })
+	   
+	
+	</script>
+</html>

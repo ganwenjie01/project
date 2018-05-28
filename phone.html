@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_650603_bh0gt5bk80ejyvi.css"/>
+		<title>移动设备</title>	
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header-top">
+				<div class="header-top-nva">
+				<span class="iconfont icon-icon-"></span>
+				<span class="iconfont icon-signal-g"></span>
+				<span class="iconfont icon-xinhao"></span>
+				<span class="iconfont icon-80dianliang"></span>
+				</div>
+				<div class="header-top-time">
+		   </div>
+			</div>	
+		</header>
+		<!--中间内容-->
+		<section>
+			
+         		<div class="swiper-container">
+                   <div class="swiper-wrapper">
+        <div class="swiper-slide">
+    	    <ul class="section-ul">
+    		<li><a href="music.html">  <img src="img/music.png" alt="" /> </a></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	    </ul>
+    	
+     </div>
+     <div class="swiper-slide">
+    	
+    	
+     </div>
+     <div class="swiper-slide">
+    	
+    	
+     </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+				
+			
+		</section>
+		<!--尾部-->
+		<footer>
+			<div class="footer-bottom">
+			        <span class="iconfont icon-dianhua"><p>电话</p></span>
+					<span class="iconfont icon-lianxiren"><p>联系人</p></span>
+					<span class="iconfont icon-xiazai16"><p>信息</p></span>
+					<span class="iconfont icon-hulianwang"><p>互联网</p></span>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		
+   document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';	
+  
+  
+  
+  //时间
+   
+   var div=document.querySelector(".header-top-time")
+   var d = new Date();
+   div.innerText=d.getHours()+":"+d.getMinutes();
+  
+  
+  
+  // swiper
+   var mySwiper = new Swiper('.swiper-container', {
+//	autoplay: true,//可选选项，自动滑动
+	pagination: {
+    el: '.swiper-pagination',
+  },
+})
+   
+   
+ </script>
+</html>

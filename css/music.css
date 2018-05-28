@@ -1,0 +1,382 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 40px;
+}
+ ul{
+ 	list-style: none;
+ }
+@font-face {
+				font-family:'ttf';
+				src: url(../font/禹卫书法行书简体.TTF);
+			}
+.push-logo{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.push-logo-img{
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	top: 4rem;
+}
+.push-logo-img>img{
+	width: 100%;
+	height: 100%;
+}
+.push-logo-word{
+	width: 100%;
+	height: 2rem;
+	position: absolute;
+	top: 11rem;
+	text-align: center;
+}
+.push-logo-word>span{
+	font-size: 0.6rem;
+	font-family: 'ttf';
+}
+.push-logo-footer{
+	width: 100%;
+	height: 3rem;
+	position: absolute;
+	bottom: 0;
+}
+.push-logo-footer-img{
+	width: 2rem;
+	height: 1.5rem;
+	margin: 0 auto;
+}
+.push-logo-footer-img>img{
+	width: 100%;
+	height: 100%;
+}
+.push-logo-footer-word{
+	width: 100%;
+	height: 1.5rem;
+	text-align: center;
+    font-size: 0.3rem;
+    line-height: 1.5rem;
+    color: #A9A9A9;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+header{
+	width: 100%;
+	height: 1.3rem;
+}
+.header-top{
+	width: 100%;
+	height: 1.3rem;
+	background: red;
+	display: flex;
+	justify-content: space-between;
+}
+/*ul{
+	display: none;
+}*/
+.header-top-public-p{
+	display: none;
+	font-size: 0.6rem;
+}
+ .header-top-ul-zhuanji,.header-top-ul-danqu{
+	font-size: 0.45rem;
+}
+.header-top-ul-zhuanji,.header-top-ul-danqu>li{
+	width: 100%;
+	height: 0.6rem; 
+	cursor: pointer; 
+}
+.header-top-ul-danqu>li>span{
+	color: #A9A9A9;
+}
+.header-top-ul-danqu>li>span:nth-of-type(2){
+	display: none;
+}
+.header-top>div:nth-of-type(1){
+	 width: 1rem;
+	 height: 100%;
+	 text-align: center;
+	 line-height: 1.3rem;
+	 font-size: 0.7rem;
+}
+.header-top>div:nth-of-type(2){
+	 width: 7rem;
+	 height: 100%;
+	 /*text-align: center;
+	 line-height: 1.3rem;*/
+	 position: relative;
+}
+.header-top>div:nth-of-type(2)>input{
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 0.2rem;
+	border-radius:0.5rem;
+	text-indent: 0.3rem;	
+}
+.header-top>div:nth-of-type(2)>div{
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	top: 1.2rem;
+	/*background: red;*/
+}
+.header-top>div:nth-of-type(3){
+	 width: 1.5rem;
+	 height: 100%;
+	 text-align: center;
+	 line-height: 1.3rem;
+	 font-size: 0.7rem;
+}
+.header-log{
+	width: 50%;
+	height:99.8%;
+	border: 1px solid red;
+	position: fixed;
+	top: 0;
+	background: white;
+	left: -5.1rem;
+	
+}
+.header-log-top{
+	width: 100%;
+	height: 4rem;
+	background-image: url(../img/xinkong.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-size:0.3rem;
+	color: white;
+	position: relative;
+	
+}
+.header-log-top>span{
+	display: block;
+	position: absolute;
+	top: 0.6rem;
+	left: 0.2rem;
+
+}
+.header-log-top>button{
+	  width: 3rem;
+	  height: 0.8rem;
+	  position: absolute;
+	  top: 1.85rem;
+	  left: 1rem;
+	  background: none;
+	  border-radius:0.5rem ;
+	  color: white;
+	  border: 0.03rem solid white;
+	  
+}
+.header-log-center{
+	width: 100%;
+	height: 7rem;
+	font-size: 0.4rem;
+	color: #A9A9A9;
+}
+.header-log-center>ul>li{
+	 margin-top: 0.3rem;
+}
+.header-footer{
+	 width: 100%;
+	 height: 1rem;
+	 position: absolute;
+	 bottom: 0;
+/*	 background: red;*/
+	 display: flex;
+	 justify-content: space-around;
+	 
+}
+.header-footer>div{
+	width: 50%;
+	height: 100%;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 1rem;
+}
+section{
+	width: 100%;	
+}
+.section-value{
+	width: 100%;
+}
+.section-value-houstsong{
+	width: 100%;
+	height: 10rem;
+}
+.section-value-houstsong>p{
+	 width: 100%;
+	 height: 1rem;
+	 font-size: 0.5rem;
+	 text-align: center;
+}
+.section-value-houstsong-ul{
+	width: 100%;
+	height: 90%;
+	overflow:auto;
+
+}
+.section-value-houstsong-ul>li>span:nth-of-type(1){
+font-size: 1rem;
+}
+.section-value-houstsong-ul>li>span:nth-of-type(2){
+font-size: 0.3rem;
+position: absolute;
+top:-0.2rem
+}
+.section-value-houstsong-ul>li>p{
+   margin-left: 0.7rem;
+   position:absolute ;
+   top: 0.3rem;
+   left: 0.3rem;
+}
+.section-value-houstsong-ul>li{
+	 position: relative;
+	height: 1rem;
+/*	text-align: center;*/
+    line-height: 1rem;
+	font-size: 0.3rem;
+	margin-left: 1rem;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   /* position: absolute;*/
+	
+}
+.section-value-houstsong-ul>li>span:nth-of-type(3){
+	display: none;
+}
+.section-value-houstsong-ul>li>span:nth-of-type(4){
+	display: none;
+}
+footer{
+	width: 100%;
+	height: 1.5rem;
+	position: fixed;
+	bottom: 0;
+	
+}
+.footer-player{
+	width: 100%;
+	height: 1.5rem;
+	background: red;
+    position: relative;
+   
+	 
+}
+.footer-player-cover{
+	width: 1.2rem;
+	height: 80%;
+	background: white;
+	position: absolute;
+	margin-left:0.17rem ;
+	top:0.17rem
+}
+.footer-player-cover-img{
+	width: 100%;
+	height: 100%;
+}
+.footer-player-songname{
+	width: 3rem;
+	height: 1rem;
+	position: absolute;
+    left: 1.7rem;
+    top:0.3rem;	
+    /*background: white;*/
+    font-size: 0.3rem;
+    color: white;
+}
+.footer-player-begin{
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+    left: 7rem;
+    top:0.3rem;	
+
+    
+  /*  font-size: 0.3rem;*/
+}
+.footer-player-begin>button{
+	width: 85%;
+	height: 82%;
+	outline: none; 
+	border: none;
+	font-size: 1.1rem;
+	position: absolute;
+
+	border-radius:50% ;
+	text-align: center;
+	
+}
+
+.footer-player-begin>button::before{
+	position: absolute;
+	top:-0.18rem;
+	left: -0.118rem;
+}
+.container-song-details{
+	width: 100%;
+	height: 100%;
+     background: yellow;
+	position: fixed;
+	top: 100%;
+	
+}
+.container-song-top{
+	 width: 100%;
+	 height: 10rem;
+	 position: relative;
+	/* background: red;*/
+}
+ .container-song-top>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	
+	
+}
+.container-song-top-return{
+	width: 100%;
+	height: 1rem;
+	background: white;
+	
+}
+.container-song-top-return>span{
+	font-size: 0.7rem;
+	position: absolute;
+/*	color: white;*/
+   z-index: 10;
+}
+.container-song-conter{
+	margin-top: 0.8rem;
+	width: 100%;
+	height: 4.5rem;
+	background: blue;
+}
+.container-song-footer{
+	 width: 100%;
+	 height: 1.5rem;
+	 background: white;
+	 margin-top: 0.5rem;
+	/*text-align: center;*/
+	display: flex;
+	justify-content: space-around;
+}
+.container-song-footer>span{
+	font-size: 0.9rem;
+	margin-top: 0.3rem;
+	
+}
